@@ -1,4 +1,4 @@
-FROM node
+FROM node:alpine
 
 WORKDIR /app
 
@@ -8,4 +8,5 @@ RUN npm install
 
 COPY . .
 
-CMD ["node", "index.js"]
+#CMD ["node", "index.js"]
+ENTRYPOINT ["node", "index.js"]
