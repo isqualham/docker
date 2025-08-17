@@ -8,5 +8,6 @@ RUN npm install
 
 COPY . .
 
-#CMD ["node", "index.js"]
+#CMD ["tail", "-f", "/dev/null"]
+CMD ["node", "index.js"]
 ENTRYPOINT ["node", "index.js"]
