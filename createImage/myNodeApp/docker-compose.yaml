@@ -1,8 +1,7 @@
 services:
-  back:
+  end:
     build: .
     image: end
-    container_name: end
     volumes:
       - .:/app       
     ports:
